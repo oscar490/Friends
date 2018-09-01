@@ -16,6 +16,7 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,11 +39,15 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            [
+                'label' => '<span>Home</span>',
+                'url' => ['/site/index'],
+                'encode'=>false,
+            ],
+            ['label' => '<span>About</span>', 'url' => ['/site/about'], 'encode'=>false],
+            ['label' => '<span>Contact</span>', 'url' => ['/site/contact'], 'encode'=>false],
             Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
+                ['label' => '<span>Login</span>', 'url' => ['/site/login'], 'encode'=>false]
             ) : (
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post')
@@ -69,9 +74,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-left">&copy; Friends <?= date('Y') ?></p>
     </div>
 </footer>
 

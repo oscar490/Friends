@@ -1,0 +1,21 @@
+span.centrado > strong {
+	font-weight: 1000;
+	font-size: 20px;
+}
+
+.panel-primary > .panel-heading {
+	background-color: #5cb85c !important;
+	border-color: #5cb85c !important;
+}
+
+.panel-primary {
+	border-color: #5cb85c !important;
+}
+
+.btn-block > span {
+	font-size: 22px;
+}
+
+div#formulario {
+	display: none;
+}

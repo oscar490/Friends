@@ -113,3 +113,43 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+/* Mis estilo */
+
+.navbar-inverse {
+    background-color: #5cb85c !important;
+    border-color: #5cb85c !important;
+}
+
+ul.navbar-nav li > a,
+a.navbar-brand {
+    color: white !important;
+    font-weight: 1000;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    color: white !important;
+    border-bottom-color: white !important;
+    background-color: #5c92b875 !important;
+    border-width: 10px;
+}
+
+ul.navbar-nav li > a:hover,
+a.navbar-brand:hover {
+    transform: scale(1.1);
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+}
+
+footer.footer {
+    background-color: #5cb85c !important;
+
+}
+
+p.pull-left {
+    color: white;
+    font-weight: 1000;
+}
