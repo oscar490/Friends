@@ -1,0 +1,1 @@
+psql -U friends -d friends -h localhost < friends.sql

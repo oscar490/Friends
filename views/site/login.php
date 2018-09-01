@@ -7,16 +7,9 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Inicio de sesión';
+$this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 
-$js = <<<EOT
-    
-    $("#formulario").fadeIn();
-
-EOT;
-
-$this->registerJs($js);
 ?>
 <div class="site-login">
     <div class="row centrado">
